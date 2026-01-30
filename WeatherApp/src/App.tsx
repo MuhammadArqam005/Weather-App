@@ -15,7 +15,7 @@ function App() {
   }
   
   const success = async (position: GeolocationPosition)=>{
-    const fetchURL: Response = await fetch(`http://localhost:3000?city=${position.coords.latitude},${position.coords.longitude}`);
+    const fetchURL: Response = await fetch(`https://weatherify-backend.vercel.app/?city=${position.coords.latitude},${position.coords.longitude}`);
     const fetchJson = await fetchURL.json();
     setLocation(fetchJson.location)
     setCondOFDay(fetchJson.conditionOfDay)
@@ -33,7 +33,7 @@ function App() {
     if(!searchCity.value){
       return null;
     }
-    const fetchURL = await fetch(`http://localhost:3000?city=${searchCity.value}`)
+    const fetchURL = await fetch(`https://weatherify-backend.vercel.app/?city=${searchCity.value}`)
     const fetchJson = await fetchURL.json();
     setLocation(fetchJson.location)
     setCondOFDay(fetchJson.conditionOfDay)
