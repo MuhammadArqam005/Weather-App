@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+#root{
+    overflow: hidden;
+}
+
+.roboto{
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.zalandosans{
+    font-family: "Zalando Sans Expanded",sans-serif;
+}
+
+.dmsans{
+    font-family: "DM Sans" , sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color : currentColor
+}
+
+@media screen and (min-width : 375px) {
+    .material-symbols-outlined {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width : 1024px) {
+    .material-symbols-outlined {
+        font-size: 40px;
+    }
+}

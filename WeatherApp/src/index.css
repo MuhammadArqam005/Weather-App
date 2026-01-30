@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-mm: 375px;
+  --breakpoint-lm : 425px;
+  --breakpoint-tb : 768px;
+  --breakpoint-lp : 1024px;
+  --breakpoint-ll : 1440px; 
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
